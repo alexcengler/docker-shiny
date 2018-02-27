@@ -1,0 +1,180 @@
+* {
+  font-family: Lato;
+}
+
+h4 {
+  color: #000000;
+}
+
+h5, .h5 {
+  margin: 0;
+}
+
+/* Eliminate padding from entire application */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.selectize-control {
+  border: black;
+	text-align: left;
+	white-space: nowrap;
+	background: url(urban-select-2x.png) no-repeat right #efefef;
+	background-size: 45px 45px;
+  margin: 0px;
+  height: 39px;
+}
+
+.selectize-input {
+  border: none;
+}
+
+.selectize-input.full {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+.selectize-control.single .selectize-input.input-active input {
+  cursor: pointer;
+}
+
+.selectize-input.focus {
+    border-color: #cccccc;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.selectize-input .item {
+	width: 299px;
+	overflow: hidden;
+	position: absolute;
+  width: 299px;
+  position: relative;
+  display: inline-block;
+  top: 3.5px;
+  width: calc(100% - 33px);
+}
+
+.selectize-input.items.full.has-options.has-items {
+  height: 39px;
+}
+
+.selectize-input.items.full.has-options.has-items.focus.input-active.dropdown-active {
+  border: black;
+	text-align: left;
+	white-space: nowrap;
+	background: url(urban-select-2x.png) no-repeat right #efefef;
+	background-size: 45px 45px;
+	margin: 0px;
+	cursor: pointer;
+  width: 100%;
+}
+
+.selectize-input.items.full.has-options.has-items.focus.input-active.dropdown-active::after {
+  border-width: 0px 0px 0px 0px;
+  margin-top: 0px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.0) transparent;
+  cursor: pointer;
+}
+
+.selectize-control.single
+.selectize-input:after {
+  border-width: 0px 0px 0px 0px;
+  height: 39px;
+}
+
+.selectize-dropdown.single {
+  border-color: #c5c5c5;
+  border-radius:0px;
+}
+
+.selectize-control.single
+.selectize-input:after {
+  border-width: 0px 0px 0px 0px;
+  margin-top: 0px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.0) transparent;
+}
+
+.selectize-control.single
+.selectize-input.dropdown-active:after {
+  margin-top: 0px;
+  border-width: 0px 0px 0px 0px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.0) transparent;
+}
+
+.selectize-input,
+.selectize-control.single .selectize-input.input-active {
+  cursor: pointer;
+}
+
+.selectize-control.single .selectize-input.input-active,
+.selectize-control.single .selectize-input.input-active input {
+  cursor: pointer;
+}
+
+.selectize-control.single .selectize-input, .selectize-control.single .selectize-input input {
+    border: none !important;
+    color: transparent;
+    text-shadow: 0 0 0 grey;
+}
+
+
+.control-label {
+  color:#1696d2;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Lato, sans-serif !important;
+}
+
+.irs-grid-pol.small {
+  display: none;
+}
+
+.slider-animate-button {
+  position: relative;
+  top: 10px;
+}
+
+.irs-grid-text,
+.iris-min,
+.iris-max,
+.irs-from,
+.irs-to,
+.irs-single {
+  font-size:11px;
+}
+
+/* Download Data Button */
+.btn,
+.btn:active {
+  background-color: #efefef;
+  display: block;  
+  float: left;
+  height: 40px;
+  width: 182px;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: baseline;  
+  padding: 10px;
+  border-radius: 0px;
+  margin: 0px;
+}
+
+.btn:hover {
+    background: #fdbf11;
+    color: #fff !important;
+}
+
+
+.fa-download:before {
+    content: none;
+}
+
+/* Project credits */
+.credit-names {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
