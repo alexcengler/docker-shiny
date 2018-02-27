@@ -4,7 +4,7 @@
 This is a simple tutorial to demonstrate that building a docker image, and running a container based on that image, is possible with no changes between EC2 and a local machine.
 
 ## Deployment on AWS EC2
-Note: This employs the default AWS Linux AMI
+Note: This employs the default AWS Linux AMI. Make sure to open port 3838 with a security group so you will be able to access that port and see the Shiny application.
 
 * SSH into the EC2 Node
 ```bash
@@ -32,13 +32,21 @@ git clone https://github.com/alexcengler/docker-shiny.git
 ```
 
 * Build the Docker Image
+```bash
+cd docker-shiny
+docker build -t shiny-app .
+```
 
+* Run the resuting image as a container
+```bash
+docker run -p 3838:3838 --name shiny-app-deploy shiny-app
+```
 
-
+* Visit DNS:3838 to see the Shiny application
 
 
 ## The Shiny Application
 
-The Shiny Application used for this example visualizes results from the Urban Institute DYNASIM model. Those visualizations [are hosted on our website](https://www.urban.org/policy-centers/cross-center-initiatives/program-retirement-policy/projects/dynasim-visualizing-older-americans-future-well-being/fiscal-health-social-security) with their code available [on our GitHub](https://github.com/UrbanInstitute/dynasim-shiny1).
+The Shiny Application used in this example visualizes data from the DYNASIM model, built by the Urban Institute's Program on Retirement Policy. Those visualizations [are hosted on our website](https://www.urban.org/policy-centers/cross-center-initiatives/program-retirement-policy/projects/dynasim-visualizing-older-americans-future-well-being/fiscal-health-social-security) with their code available [on our GitHub](https://github.com/UrbanInstitute/dynasim-shiny1).
 
 That application originally built by Aaron Williams, with modeling done by Karen Smith and Aaron Williams.
